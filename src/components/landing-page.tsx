@@ -6,9 +6,15 @@ import image3 from '../../public/3. Order Completed 2.svg'
 import image4 from '../../public/4. Designer Desk 2.svg'
 import image5 from '../../public/5. Diversity Unity-2.svg'
 import image6 from '../../public/5. Diversity Unity.svg'
+import { Dispatch, SetStateAction } from 'react'
+import { type } from 'os'
 
+type props = {
+    setPage: Dispatch<SetStateAction<string>>;
+    data: string[][]
+}
 
-export default function Landing(){
+export default function Landing({setPage, data}: props){
     return <div id="carouselExampleDark" className={"carousel carousel-dark slide " + styles.container}>
     <div className="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -16,25 +22,28 @@ export default function Landing(){
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div className={"carousel-inner " + styles.innerContainer}>
-      <div className="carousel-item active" data-bs-interval="10000">
-        <Image src={image1} className="d-block" alt="..." width={500} height={500}/>
-        <div className="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+      <div className={"carousel-item active " + styles.block} data-bs-interval="10000">
+        <Image src={image1} className="d-block" alt="..."/>
+        <div className={"carousel-caption " + styles.details}>
+          <h5>{data[0][0]}</h5>
+          <p>{data[0][1]}</p>
+          <button type="button" onClick={() => setPage(() => "login")} className="btn btn-dark">Get Started</button>
         </div>
       </div>
-      <div className="carousel-item" data-bs-interval="2000">
-        <Image src={image2} className="d-block" alt="..." width={500} height={500}/>
-        <div className="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+      <div className={"carousel-item " + styles.block}  data-bs-interval="2000">
+        <Image src={image2} className="d-block" alt="..."/>
+        <div className={"carousel-caption " + styles.details}>
+          <h5>{data[1][0]}</h5>
+          <p>{data[1][1]}</p>
+          <button type="button" onClick={() => setPage(() => "login")} className="btn btn-dark">Get Started</button>
         </div>
       </div>
-      <div className="carousel-item">
-        <Image src={image3} className="d-block" alt="..." width={500} height={500}/>
-        <div className="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+      <div className={"carousel-item " + styles.block} >
+        <Image src={image3} className="d-block" alt="..."/>
+        <div className={"carousel-caption " + styles.details}>
+          <h5>{data[2][0]}</h5>
+          <p>{data[2][1]}</p>
+          <button type="button" onClick={() => setPage(() => "login")} className="btn btn-dark">Get Started</button>
         </div>
       </div>
     </div>

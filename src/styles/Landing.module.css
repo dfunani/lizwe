@@ -3,14 +3,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid yellow;
     min-width: 100vw;
-}
-
-.button{
-    border-radius: 30%;
+    min-height: 100vh;
 }
 
 .innerContainer{
     width: 100%;
+    min-height: 100vh;
+}
+
+.details{
+    margin-bottom: 5em;
+}
+.block{
+    min-height: 100vh;
+}
+.block > :nth-child(1){
+    margin: auto;
+    min-width: 100vw;
+    min-height: 75vh;
 }

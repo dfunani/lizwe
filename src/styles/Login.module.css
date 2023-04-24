@@ -1,0 +1,28 @@
+.container{
+    background-image: #00000000;
+  background-repeat: no-repeat;
+  margin-top: 5em;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+   background-color: #00000000;
+    border: none;
+    margin-top: 2em;
+}
+
+.buttons{
+    background-color: #00000000;
+    border: none;
+    color: #000000;
+}
+
+.buttons:hover{
+    color: rgb(253, 250, 250);
+    border: none;
+    background-color: #3f3e3e;
+}
