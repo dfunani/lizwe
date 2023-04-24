@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    background-color: white;
+    width: 1em;
+    height: 1em;
+    border-radius: 60%;
+    margin-inline: .2em;
+}
