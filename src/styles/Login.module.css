@@ -2,7 +2,7 @@
     background-image: #00000000;
   background-repeat: no-repeat;
   margin-top: 5em;
-
+    box-shadow: red solid 2px 2px 2px;
 }
 
 .header{
