@@ -19,7 +19,7 @@ export default function Login(){
 <div className={"tab-content " + styles.login} id="myTabContent">
 
   {/* Tab Info   */}
-  <div className="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabIndex="0">
+  <div className="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabIndex={0}>
   <div className={"card mb-3 " + styles.cards}>
   <div className="row g-0">
     <div className="col-md-4">
@@ -41,7 +41,7 @@ export default function Login(){
   </div>
   
   {/* Tab Info   */}
-  <div className="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabIndex="0">
+  <div className="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabIndex={0}>
   <div className={"card mb-3 " + styles.cards}>
   <div className="row g-0">
     <div className="col-md-4">
